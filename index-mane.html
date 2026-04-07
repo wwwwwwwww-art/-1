@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Главная - Карта отелей</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="/style.css-mane/style-mane.css" />
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="nav-links">
+                <a href="#" id="worldMapBtn">Карта мира</a>
+                <a href="#">Бронирование</a>
+                <a href="#">Отзывы</a>
+                <a href="/" class="logo-link">
+                    <img class="name" src="/img/Name (1).svg" alt="Logo" onerror="this.style.display='none'">
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Поиск">
+                <button class="search-button" id="searchButton">Найти</button>
+            </div>
+        </div>
+    </header>
+    <div id="modalMap" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>🏨 Карта отелей поблизости</h2>
+                <button class="close-modal" id="closeModalBtn">&times;</button>
+            </div>
+            <div id="hotelMap"></div>
+            <div class="map-footer">
+                📍 Отмечены лучшие отели в центре города
+            </div>
+        </div>
+    </div>
+    <mane>
+ <div class="travel">
+  <img class="bg-image" src="/img/image 2 (2).png">
+  <img class="overlay-image" src="/img/Rectangle 5.png">
+  <button class="ai-button">Создать маршрут с AI</button>
+  <div class="travel1">
+    <img class="t" src="/img/Group 42.png">
+</div>
+<p class="abz">Путешествия, которые планируют себя сами. Достаточно лишь выбрать направление, а искусственный интеллект подберёт отели, билеты и маршрут под ваш бюджет и предпочтения.</p>
+</div>
+<div class="company">
+    <h2 class="comp">О компании</h2>
+    <p class="comp1">Искусственный интеллект анализирует ваши предпочтения, бюджет и даже настроение, чтобы собрать идеальный маршрут за считанные минуты.</p>
+    <img class="klas" src="/img/Rectangle 13.png">
+</div>
+<div class="chet">
+    <img class="rlas" src="/img/Group 43.png">
+    <div class="chet1">
+    <h2 class="tra">12 000+</h2>
+    <p class="sdf">Классных путешествий!</p>
+    </div>
+    <div class="chet2">
+    <h2 class="tra">10+ лет</h2>
+    <p class="sdf">Работы  в компании</p>
+    </div>
+    <div class="chet3">
+    <h2 class="tra">Более 20 000</h2>
+    <p class="sdf">Клиентов</p>
+    </div>
+</div>
+<div class="conter">
+    <h1 class="ter">Откройте мир без лишних забот</h1>
+    <p class="ty">Представьте: вы просто садитесь в самолёт, а всё остальное уже сложено в идеальный пазл. Отели, трансферы, локации, которые знают только местные — всё ждёт вас.
+Путешествия, которые планируют себя сами — это не просто сервис. Это новый способ путешествовать.</p>
+<video class="custom-video" width="535" height="274" muted autoplay loop>
+  <source src="/img/100223-video-720 (1).mp4" type="video/mp4">
+</video>
+</div>
+    </mane>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/js/js-mane.js"></script>
+</body>
+</html>

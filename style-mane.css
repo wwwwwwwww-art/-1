@@ -1,0 +1,418 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arsenal SC', 'Mulish', sans-serif;
+            color: #141F6F;
+        }
+
+        body {
+            background: #f5f7fe;
+        }
+        .head {
+            margin-left: 150px;
+            margin-right: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .head a {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 24px;
+            margin-left: 20px;
+            vertical-align: middle;
+            position: relative;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:first-child {
+            margin-left: 0;
+        }
+
+        .head a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #32006f;
+            transition: width 0.3s ease;
+        }
+
+        .head a:hover::after {
+            width: 100%;
+        }
+
+        .head a:hover {
+            color: #0a0a90;
+        }
+
+        .logo-link {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .name {
+            vertical-align: middle;
+            height: 40px;
+            width: auto;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-input {
+            padding: 4px 18px;
+            font-size: 16px;
+            border: 2px solid #141F6F;
+            border-radius: 40px;
+            background-color: white;
+            color: #141F6F;
+            outline: none;
+            transition: all 0.3s ease;
+            width: 280px;
+        }
+
+        .search-input::placeholder {
+            color: rgba(20, 31, 111, 0.6);
+            font-weight: 500;
+        }
+
+        .search-input:focus {
+            border-color: #32006f;
+            box-shadow: 0 0 12px rgba(50, 0, 111, 0.2);
+        }
+
+        .search-button {
+            padding: 4px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: #141F6F;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #32006f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(20, 31, 111, 0.3);
+        }
+
+        .search-button:active {
+            transform: translateY(0);
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.25s ease;
+        }
+
+        .modal-container {
+            background: white;
+            width: 90%;
+            max-width: 1100px;
+            height: 85%;
+            max-height: 85%;
+            border-radius: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            animation: slideUp 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 28px;
+            border-bottom: 1px solid #e2e8f0;
+            background: #ffffff;
+        }
+
+        .modal-header h2 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #141F6F;
+            letter-spacing: -0.3px;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 32px;
+            cursor: pointer;
+            color: #141F6F;
+            transition: 0.2s;
+            line-height: 1;
+            padding: 0 8px;
+        }
+
+        .close-modal:hover {
+            color: #ff4d4d;
+            transform: scale(1.1);
+        }
+
+        #hotelMap {
+            flex: 1;
+            width: 100%;
+            background-color: #e9f0f5;
+            z-index: 1;
+            height: 100%;
+            min-height: 400px;
+            border-radius: 0;
+        }
+
+        .map-footer {
+            padding: 12px 20px;
+            background: #f8fafc;
+            font-size: 14px;
+            text-align: center;
+            border-top: 1px solid #e2edf2;
+            color: #2c3e66;
+        }
+
+.travel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        .bg-image {
+            display: block;
+            height: auto;
+        }
+
+        .overlay-image {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 425%);
+            height: auto;
+            width: 30%;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .travel1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -98%);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20;     
+            z-index: 5;
+            white-space: nowrap;
+            flex-wrap: nowrap;
+        }
+                .ai-button {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 745%);
+            background-color: #141F6F;
+            color: white;
+            border: none;
+            padding: 5px 50px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+            white-space: nowrap;
+            z-index: 20; 
+            transition: background-color 0.3s ease;
+            font-family: inherit;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .ai-button:hover {
+            background-color: #1a2a8a;
+        }
+        .t {
+    animation: logoReveal 0.8s ease-out;
+}
+
+@keyframes logoReveal {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+}
+.abz {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 30%);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: 'Arsenal SC', 'Mulish', sans-serif;
+    z-index: 10;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    min-width: 900px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 35%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 30%);
+    }
+}
+        .company {
+    margin-left: 150px;
+    margin-top: 60px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.chet {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left: 40px; 
+}
+
+h2 {
+    font-size: 29px;
+}
+
+.comp1 {
+    font-size: 20px;
+    max-width: 550px;
+    margin-top: 10px;
+}
+
+.klas {
+    margin-top: 20px;
+}
+
+.chet {
+    margin-left: 300px;
+    margin-top: 27px;
+}
+.chet1 {
+    margin-top: -150px;
+    max-width: 150px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}
+.tra {
+    font-size: 40px;
+     transition: all 0.3s ease;
+}
+.sdf {
+    font-size: 22px;
+}
+.chet2 {
+    margin-top: -108px;
+    max-width: 150px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    margin-left: 200px;
+}
+.chet3 {
+    margin-top: 40px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    margin-left: 0px;
+    font-size: 30px;
+}
+    .conter {
+    width: 1203px;
+    height: 371px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto 0 auto;
+    background: linear-gradient(90deg, #6692AB 0%, #293B45 100%);
+    border-radius: 45px;
+}
+.ter {
+position: absolute;
+width: 524px;
+left: 200px;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+text-align: center;
+color: #FFFFFF;
+margin-top: -180px;
+}
+.ty {
+position: absolute;
+width: 460px;
+height: 150px;
+left: 240px;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+color: #FFFFFF;
+margin-top: 120px;
+}
+.custom-video {
+  position: absolute;
+  width: 535px;
+  height: 274px;
+  left: 770px;
+  margin-top: 30px;
+  border-radius: 45px;
+  object-fit: cover;
+}
