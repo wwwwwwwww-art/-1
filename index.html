@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.prrofil/style1.css">
+       <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Профиль</title>
+</head>
+<body>
+         <header>
+        <div class="head">
+            <div class="nav-links">
+                <a href="/index.html-mane/index-mane.html">Главная</a>
+                <a href="#">Бронирование</a>
+                <a href="#">Отзывы</a>
+                <a href="/profil.index/index.html" class="logo-link">
+                    <img class="name" src="/img/Name (1).svg" alt="Logo" onerror="this.style.display='none'">
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Поиск">
+                <button class="search-button" id="searchButton">Найти</button>
+            </div>
+        </div>
+    </header>
+    <div id="modalMap" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>🏨 Карта отелей поблизости</h2>
+                <button class="close-modal" id="closeModalBtn">&times;</button>
+            </div>
+            <div id="hotelMap"></div>
+            <div class="map-footer">
+                📍 Отмечены лучшие отели в центре города
+            </div>
+        </div>
+    </div>
+    <main>
+   <h1 class="pr">Мой профиль:</h1>
+<div class="pol">
+    <div class="plat">
+        <form id="profile-form">
+            <img class="foto5" src="/img/Group 45 (1).png" alt="Аватар">
+            <input type="text" id="profile-name" placeholder="Имя" />
+            <input type="tel" id="profile-phone" placeholder="Номер телефона" />
+            <input type="email" id="profile-email" placeholder="Почта" />
+        <button type="button" id="save-profile" style="
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(147, 185, 255, 0.44);
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(102, 99, 210, 0.3);
+    transform: translateY(15px);
+">
+    Сохранить данные
+</button>
+
+<button type="button" id="logout-btn" style="
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+     background-color: rgba(147, 185, 255, 0.44);
+    margin-top: 15px; 
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.95;
+    transition: opacity 0.2s ease;
+    transform: translateY(-5px);
+">
+    Выйти
+</button>
+        </form>
+    </div>
+</div>
+<div class="message-container"></div>
+         <h2 class="intere">Мои интересы:</h2>
+         <div class="klo">
+         <div class="kolon">
+            <div class="rectangle-33"><h3 class="tx">Пляжный релакс</h3></div>
+            <div class="rectangle-34"><h3 class="tx">Экстрим</h3></div>
+            <div class="rectangle-35"><h3 class="tx">Горные лыжи </h3></div>
+            <div class="rectangle-36"><h3 class="tx">Шопинг</h3></div>
+         </div>
+          <div class="kolon1">
+             <div class="rectangle-39"><h3 class="tx">Оздоровление</h3></div>
+            <div class="rectangle-40"><h3 class="tx">Романтика</h3></div>
+            <div class="rectangle-41"><h3 class="tx">Круизы</h3></div>
+         </div>
+         </div>
+         <h2 class="intere1">Ваши реквизиты:</h2>
+         <div class="rekviz">
+          <img class="jkl" src="/img/Group 47 (1).png">
+          <img class="jkl1" src="/img/Group 48.png">
+           <img class="jkl2" src="/img/Group 49.png">
+         </div>
+         <h2 class="ert">Ваши баллы:</h2>
+         <img class="jkl3" src="/img/Group 56.png">
+         <div class="points-value">1500 б.</div>
+         <h2 class="op">Мои интересы:</h2>
+         <div class="cal">
+          <img class="card" src="/img/Group 51.png">
+          <img class="read" src="/img/Group 52.png">
+          <img class="book" src="/img/Group 55.png">
+          <div class="quest"> 
+            <h2 class="vpr">Если есть какие то вопросы:</h2>
+             <ol class="ghj">
+        <li><span class="important">Проверьте очевидное:</span> обновите страницу, проверьте интернет-соединение</li>
+        <li>Поищите помощь на сайте (здесь)</li>
+        <li>Проверьте свои заказы</li>
+        <li><span class="important">Если ничего не помогло,</span> то напишите в поддержку</li>
+    </ol>
+          </div>
+         </div>
+         <div class="message-container"></div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/ptofil.app/profil.js"> </script>
+</body>
+</html>

@@ -15,7 +15,7 @@
                 <a href="#" id="worldMapBtn">Карта мира</a>
                 <a href="#">Бронирование</a>
                 <a href="#">Отзывы</a>
-                <a href="/" class="logo-link">
+                <a href="/profil.index/index.html" class="logo-link">
                     <img class="name" src="/img/Name (1).svg" alt="Logo" onerror="this.style.display='none'">
                 </a>
             </div>
@@ -75,7 +75,228 @@
   <source src="/img/100223-video-720 (1).mp4" type="video/mp4">
 </video>
 </div>
+ <h2 class="comp4">Топ 10 отелей по сайту</h2>
+ <img class="rest" src="/img/Rectangle 15.png">
+ <div class="modal-container1" id="scrollContainer">
+    <div class="foto10">
+        <div class="image-wrapper">
+            <img class="foto11" src="/img/Group 44.png" alt="Богемания">
+            <button class="price-btn">от 3500₽</button>
+            <div class="card-info">
+                <h3 class="place-title">Богемания</h3>
+                <div class="location-rating">
+                    <span class="location">Краснодарский край, Анапа |</span>
+                    <span class="rating">5.0 (1,2k)</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Салон красоты</span>
+                    <span class="tag">Бар, ресторан</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foto10">
+        <div class="image-wrapper">
+            <img class="foto11" src="/img/Group 45.png" alt="Amici Grand Hotel">
+            <button class="price-btn">от 3200₽</button>
+            <div class="card-info">
+                <h3 class="place-title">Amici Grand Hotel 4</h3>
+                <div class="location-rating">
+                    <span class="location">Краснодарский край |</span>
+                    <span class="rating">4.9 (1,5k)</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Бассейн, спа</span>
+                    <span class="tag">Тренажерный зал</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foto10">
+        <div class="image-wrapper">
+            <img class="foto11" src="/img/Group 46.png" alt="Дон-Плаза">
+            <button class="price-btn">от 2700₽</button>
+            <div class="card-info">
+                <h3 class="place-title">Дон-Плаза</h3>
+                <div class="location-rating">
+                    <span class="location">Ростов-на-Дону |</span>
+                    <span class="rating">4.8 (1,1k)</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Сауна, спа</span>
+                    <span class="tag">Тренажерный зал</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foto10">
+        <div class="image-wrapper">
+            <img class="foto11" src="/img/Group 47.png" alt="Тренд Самара">
+            <button class="price-btn">от 2600₽</button>
+            <div class="card-info">
+                <h3 class="place-title">Тренд Самара</h3>
+                <div class="location-rating">
+                    <span class="location">Самара |</span>
+                    <span class="rating">4.6 (1,7k)</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Wi-Fi</span>
+                    <span class="tag">Доставка еды в номер</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foto10">
+        <div class="image-wrapper">
+            <img class="foto11" src="/img/Rectangle 27.png" alt="Холидэй Хотел">
+            <button class="price-btn">от 2400₽</button>
+            <div class="card-info">
+                <h3 class="place-title">Холидэй Хотел</h3>
+                <div class="location-rating">
+                    <span class="location">Владивосток |</span>
+                    <span class="rating">4.5 (1,3k)</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Wi-Fi</span>
+                    <span class="tag">Круглосуточная регистрация</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foto10">
+        <div class="image-wrapper">
+            <img class="foto11" src="/img/Rectangle 30.png" alt="Pallada 2">
+            <button class="price-btn">от 1900₽</button>
+            <div class="card-info">
+                <h3 class="place-title">Pallada 2</h3>
+                <div class="location-rating">
+                    <span class="location">Владивосток |</span>
+                    <span class="rating">4.5 (1,1k)</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Wi-Fi</span>
+                    <span class="tag">Круглосуточная регистрация</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="hotelCardModal" class="hotel-card-modal">
+    <div class="hotel-modal-window">
+        <button class="close-hotel-modal" id="closeHotelModalBtn">✕</button>
+        <img id="hotelModalImg" class="hotel-modal-img" src="" alt="Отель">
+        <div class="hotel-modal-content">
+            <h2 id="hotelModalTitle" class="hotel-modal-title">Название отеля</h2>
+            <div class="hotel-modal-location">
+                <span id="hotelModalLocation"></span>
+                <span id="hotelModalRating" class="hotel-modal-rating"></span>
+            </div>
+            <div class="hotel-modal-price">
+                <span id="hotelModalPrice"></span> <span>/ ночь</span>
+            </div>
+            <div id="hotelModalAmenities" class="hotel-modal-amenities"></div>
+            <p id="hotelModalDesc" class="hotel-modal-desc"></p>
+            <button class="hotel-modal-btn" id="hotelBookBtn">🔥 Забронировать сейчас</button>
+        </div>
+    </div>
+</div>
+<div id="aiModal" class="modal-overlay">
+    <div class="modal-container ai-modal-container">
+        <div class="modal-header ai-modal-header">
+            <h2>🤖 AI подбирает идеальный маршрут</h2>
+            <button class="close-modal close-ai-modal">&times;</button>
+        </div>
+        <div class="ai-modal-content">
+            <div class="ai-loading" id="aiLoading">
+                <div class="spinner"></div>
+                <p>Анализируем ваши предпочтения...</p>
+            </div>
+            <div class="ai-results" id="aiResults" style="display: none;">
+                <div class="ai-route-card">
+                    <div class="route-icon">🏔️</div>
+                    <div class="route-info">
+                        <h3>Горный уикенд • Красная Поляна</h3>
+                        <p>3 дня, от 15 900 ₽</p>
+                        <span class="route-tag">Природа</span>
+                        <span class="route-tag">Активный отдых</span>
+                    </div>
+                </div>
+                <div class="ai-route-card">
+                    <div class="route-icon">🏖️</div>
+                    <div class="route-info">
+                        <h3>Пляжный релакс • Анапа/Сочи</h3>
+                        <p>5 дней, от 24 500 ₽</p>
+                        <span class="route-tag">Море</span>
+                        <span class="route-tag">Спа</span>
+                    </div>
+                </div>
+                <div class="ai-route-card">
+                    <div class="route-icon">🏙️</div>
+                    <div class="route-info">
+                        <h3>Культурный тур • Золотое кольцо</h3>
+                        <p>4 дня, от 19 200 ₽</p>
+                        <span class="route-tag">Экскурсии</span>
+                        <span class="route-tag">История</span>
+                    </div>
+                </div>
+                <div class="ai-route-card">
+                    <div class="route-icon">⛵</div>
+                    <div class="route-info">
+                        <h3>Водное приключение • Байкал</h3>
+                        <p>6 дней, от 32 000 ₽</p>
+                        <span class="route-tag">Экзотика</span>
+                        <span class="route-tag">Фототур</span>
+                    </div>
+                </div>
+                <button class="ai-generate-btn" id="regenerateRoutes">🔄 Сгенерировать ещё</button>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="ai-disclaimer">✨ AI анализирует популярные направления и лучшие предложения</p>
+        </div>
+    </div>
+</div>
     </mane>
+
+    <footer>
+         <div class="footer-left">
+        <div class="transport-icons">
+            <a href="#">
+                <img src="/img/Train.png" alt="Авиа">
+                <span>Авиа</span>
+            </a>
+            <a href="#">
+                <img src="/img/Train.png" alt="Ж/д">
+                <span>Ж/д</span>
+            </a>
+        </div>
+        <div class="footer-links-left">
+            <a href="#">О сервисе</a>
+            <a href="#">Служба поддержки</a>
+            <a href="#">Пользовательское соглашение</a>
+        </div>
+    </div>
+    <div class="footer-right">
+        <div class="social-icons">
+            <a href="#"><img src="/img/VK com (1).png" alt="VK"></a>
+            <a href="#"><img src="/img/Odnoklassniki.png" alt="Одноклассники"></a>
+        </div>
+        <div class="footer-links-right">
+            <a href="#">Личный кабинет</a>
+            <a href="#">Правила рекомендаций</a>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+    <div class="footer-center">
+        <img class="fot1" src="/img/Travel.png" alt="Travel">
+        <button class="ai-button1">Создать маршрут с AI</button>
+    </div>
+    </footer> 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="/js/js-mane.js"></script>
 </body>
